@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <p>hello vite</p>
+      <h1 className="text-primary">Hello React Developer</h1>
     </>
   )
 }
