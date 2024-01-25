@@ -1,10 +1,12 @@
 import './App.css'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-primary">Hello React Developer</h1>
+      <nav>nav bar</nav>
+      <Outlet />
     </>
   )
 }
