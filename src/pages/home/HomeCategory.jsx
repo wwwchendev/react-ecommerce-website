@@ -59,12 +59,14 @@ const HomeCategory = () => {
               {
                 categoryList.map((category, idx) => {
                   return (<div key={idx} className='col'>
-                    <Link to='/shop' className='category-item'>
+                    <div className='category-item'>
                       <div className='category-inner'>
                         {/* 分類縮圖 */}
-                        <div className="category-thumb">
-                          <img src={category.imgUrl} alt="" />
-                        </div>
+                        < Link to='/shop'>
+                          <div className="category-thumb">
+                            <img src={category.imgUrl} alt="" />
+                          </div>
+                        </Link>
                         {/* 內容 */}
                         <div className="category-content">
                           <div className="cate-icon">
@@ -73,7 +75,7 @@ const HomeCategory = () => {
                           <Link to={`/shop`}><h6>{category.title}</h6></Link>
                         </div>
                       </div>
-                    </Link>
+                    </div>
                   </div>)
                 })
               }
