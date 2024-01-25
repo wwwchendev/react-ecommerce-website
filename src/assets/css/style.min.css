@@ -4941,8 +4941,8 @@ button {
 
 @media(min-width: 992px) {
   .banner-section.style-4 {
-    padding-top: 313px;
-    padding-bottom: 215px
+    /* padding-top: 313px; */
+    padding-bottom: 150px
   }
 }
 

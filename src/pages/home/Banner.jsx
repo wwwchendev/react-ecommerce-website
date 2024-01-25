@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const title = (
   <h2>在眾多品項中搜尋心中的<span>理想</span>商品</h2>
 )
-const desc = '提供最豐富齊全的商品品項'
+const desc = '挑選快樂，以及對生活的熱愛'
 const bannerList = [
   {
     iconName: "icofont-users-alt-4",
@@ -46,7 +46,7 @@ const Banner = () => {
             <input type="text" name='search' id='search' placeholder='搜尋商品...' value={searchInput} onChange={handleSearch} />
             <button type='submit'><i className="icofont-search"></i></button>
           </form>
-          <p>{desc}</p>
+          <p className='m-5'>{desc}</p>
           <ul className="lab-ul">
             {
               searchInput && filterdProducts.map((product, idx) => (
