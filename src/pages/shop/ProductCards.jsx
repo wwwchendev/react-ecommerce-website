@@ -6,6 +6,10 @@ const defaultImage = 'https://images.unsplash.com/photo-1561715276-a2d087060f1d?
 
 const ProductCards = ({ GridList, products }) => {
   const [data, setData] = useState(products)
+  useEffect(() => {
+    setData(products);
+  }, [products]);
+
   const setDefaultImg = (id) => {
     // 設定 data 的新狀態
     setData((prevData) => (
