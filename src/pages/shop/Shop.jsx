@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PageHeader from '../../components/PageHeader'
 import Data from '../../products.json'
+import ProductCards from './ProductCards'
 const showResults = '顯示 01 - 12 共 139 項商品'
 
 const Shop = () => {
@@ -26,6 +27,10 @@ const Shop = () => {
                       <i className="icofont-listine-dots"></i>
                     </a>
                   </div>
+                </div>
+                {/* Product cards */}
+                <div>
+                  <ProductCards GridList={GridList} products={products} />
                 </div>
               </article>
             </div>

@@ -2580,6 +2580,8 @@
                     img {
                         @extend %w-100;
                         transform-origin: left;
+                        object-fit: cover;
+                        min-height:250px;
                     }
                 }
 				.product-action-link {
@@ -2611,6 +2613,7 @@
 			.product-content {
 				padding-top: 20px;
     			text-align: center;
+                min-height: 140px;
 				h5 {
 				    @extend %m-0;
 				    margin-bottom: 5px;
