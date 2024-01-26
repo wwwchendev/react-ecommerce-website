@@ -17,8 +17,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './home/Home.jsx';
-import Blog from './blog/Blog.jsx';
+import Home from './pages/home/Home.jsx';
+import Blog from './pages/blog/Blog.jsx';
 
 const router = createBrowserRouter([
   {
