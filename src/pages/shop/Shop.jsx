@@ -3,8 +3,9 @@ import PageHeader from '../../components/PageHeader'
 import Data from '../../products.json'
 import ProductCards from './ProductCards'
 import Pagination from './Pagination'
+import Search from './Search'
 
-const showResults = '顯示 01 - 12 共 139 項商品'
+// const showResults = '顯示 01 - 12 共 139 項商品'
 
 const Shop = () => {
   const [GridList, setGridList] = useState(true)
@@ -53,7 +54,7 @@ const Shop = () => {
               </article>
             </div>
             <div className="col-lg-4 col-12">
-              right-here
+              <Search products={products} GridList={GridList} />
             </div>
           </div>
         </div>
