@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import { ProductDisplay } from './ProductDisplay';
+import { Review } from './Review';
 // Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -98,7 +99,7 @@ const SingleProduct = () => {
                   </div>
                   {/* reviews */}
                   <div className="review">
-                    review
+                    <Review />
                   </div>
                 </article>
               </div>

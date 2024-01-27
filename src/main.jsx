@@ -21,7 +21,7 @@ import {
 import Home from './pages/home/Home.jsx';
 import Blog from './pages/blog/Blog.jsx';
 import Shop from './pages/shop/Shop.jsx';
-import SingleProduct from './pages/shop/SingleProduct.jsx';
+import SingleProduct from './pages/singleProduct/SingleProduct.jsx';
 
 const router = createBrowserRouter([
   {
