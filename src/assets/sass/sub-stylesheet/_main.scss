@@ -3080,7 +3080,6 @@
                                 box-shadow: none;
                                 cursor: pointer;
                                 outline: none;
-                                border: none;
                                 @extend %bg-theme;
                                 @include border-radius(3px);
 							}
