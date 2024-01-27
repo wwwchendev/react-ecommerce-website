@@ -3,11 +3,14 @@ import { useParams } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import { ProductDisplay } from './ProductDisplay';
 import { Review } from './Review';
+import PopularPost from '../shop/PopularPost';
+import Tags from '../shop/Tags';
 // Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
+
 
 const SingleProduct = () => {
   const [product, setProduct] = useState([]);
@@ -35,7 +38,7 @@ const SingleProduct = () => {
   return (
     <>
       <div>
-        <PageHeader title={'產品'} currentPage={'Shop / Single Product'} />
+        <PageHeader title={'產品'} currentPage={`Shop/${product.category}/${product.name}`} />
         <div className="shop-single padding-tb aside-bg">
           <div className="container">
             <div className="row justify-content-center">
@@ -104,7 +107,12 @@ const SingleProduct = () => {
                 </article>
               </div>
               {/* right side */}
-              <div className="col-lg-4 col-12">Right Side</div>
+              <div className="col-lg-4 col-12">
+                <aside className="ps-lg-4">
+                  <PopularPost />
+                  <Tags />
+                </aside>
+              </div>
             </div>
           </div>
         </div >
