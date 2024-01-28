@@ -2580,6 +2580,8 @@
                     img {
                         @extend %w-100;
                         transform-origin: left;
+                        object-fit: cover;
+                        min-height:250px;
                     }
                 }
 				.product-action-link {
@@ -2611,6 +2613,7 @@
 			.product-content {
 				padding-top: 20px;
     			text-align: center;
+                min-height: 140px;
 				h5 {
 				    @extend %m-0;
 				    margin-bottom: 5px;
@@ -2793,12 +2796,18 @@
                 outline: none;
                 transform: translateY(-50%);
                 z-index: 1;
+                position: absolute;
+            }
+            .swiper-container{
+                position: relative;
             }
             .pro-single-prev {
-                right: 0;
+                left: 0;
             }
             .pro-single-next {
-                left: 0;
+                right: 0;
+                left: 100%;
+                transform: translate(-100%,-50%);
             }
         }
 		.post-content {
@@ -3071,7 +3080,6 @@
                                 box-shadow: none;
                                 cursor: pointer;
                                 outline: none;
-                                border: none;
                                 @extend %bg-theme;
                                 @include border-radius(3px);
 							}

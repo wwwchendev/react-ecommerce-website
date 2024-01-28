@@ -112,3 +112,6 @@ button {
 	padding: 13px 15px;
 	@include transition($transition);
 }
+img{
+	object-fit: cover;
+}

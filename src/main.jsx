@@ -12,6 +12,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import '././assets/css/icofont.min.css';
 import '././assets/css/animate.css';
 import '././assets/css/style.min.css';
+import '././assets/sass/style.css';
 
 import {
   createBrowserRouter,
@@ -19,6 +20,9 @@ import {
 } from "react-router-dom";
 import Home from './pages/home/Home.jsx';
 import Blog from './pages/blog/Blog.jsx';
+import Shop from './pages/shop/Shop.jsx';
+import SingleProduct from './pages/singleProduct/SingleProduct.jsx';
+import CartPage from './pages/cardPage/CartPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +32,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />
+      },
+      {
+        path: "/shop",
+        element: <Shop />
+      },
+      {
+        path: "/shop/:id",
+        element: <SingleProduct />
+      },
+      {
+        path: "/cart-page",
+        element: <CartPage />
       },
       {
         path: "/blog",
