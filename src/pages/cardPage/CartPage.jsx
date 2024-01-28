@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import PageHeader from '../../components/PageHeader';
 import { Link } from 'react-router-dom';
 import delImgUrl from '../../assets/images/shop/del.png';
+import CheckOutPage from './CheckOutPage';
 
 const CartPage = () => {
   const [cartItems, setcartItems] = useState([]);
@@ -127,10 +128,9 @@ const CartPage = () => {
                 </form>
                 <form className='cart-checkout'>
                   <input type="submit" value='更新購物車' />
-                  <button className="lab-outline-btn bg-transparent">
-                    <span>下一步</span>
-                    <i className="icofont-rounded-right ms-1"></i>
-                  </button>
+                  <div>
+                    <CheckOutPage />
+                  </div>
                 </form>
               </div>
               {/* checkout-box end .... */}
@@ -194,7 +194,7 @@ const CartPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
