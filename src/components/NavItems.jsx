@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/logo.png'
+import { AuthContext } from '../context/AuthProvider'
+
 const NavItems = () => {
   const [headerFixed, setHeaderFixed] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
   const [socialToggle, setSocialToggle] = useState(false);
+
+  // auth info
+  const { user } = useContext(AuthContext)
 
   // 監聽視窗滾動位置 固定Header
   window.addEventListener('scroll', () => {
