@@ -1,9 +1,29 @@
 import React from 'react'
-import { auth } from '../../firebase/firebase.config'
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from '../../firebase/firebase.config'
+
+const provider = new GoogleAuthProvider();
+const auth = getAuth(app);
+
 const Login = () => {
-  console.log(auth);
+  const handleLogin = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        alert('登入成功')
+      }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
+  }
   return (
-    <div>Login</div>
+    <div className="m-5 p-5">
+      <button className="bg-primary px-4 text-white" onClick={handleLogin}>
+        登入
+      </button>
+    </div>
   )
 }
 
