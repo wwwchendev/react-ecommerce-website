@@ -1,9 +1,29 @@
-.nav-profile {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: indigo;
+.navUserInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  position: relative;
+
+  .nav-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: indigo;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .userOperation {
+    position: absolute;
+    top: 60px;
+    width: 150px;
+
+    .list-group-item:hover {
+      background-color: #f1f1f1;
+    }
+  }
 }
 
 

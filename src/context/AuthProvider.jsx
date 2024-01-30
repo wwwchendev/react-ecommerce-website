@@ -33,7 +33,11 @@ const AuthProvider = ({ children }) => {
 
   const authInfo = {
     user,
-    loading
+    loading,
+    createUser,
+    signUpWithGoogle,
+    login,
+    logOut
   }
 
   // 確認用戶登入狀態

@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import 'swiper/css';
 import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
+import AuthProvider from './context/AuthProvider.jsx';
 
 // bootstrap css
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,8 +28,8 @@ import CartPage from './pages/cardPage/CartPage.jsx';
 import SingleBlog from './pages/blog/SingleBlog.jsx';
 import About from './pages/about/About.jsx';
 import Contact from './pages/contact/Contact.jsx';
-import AuthProvider from './context/AuthProvider.jsx';
-
+import Login from './pages/login/Login.jsx';
+import SignUp from './pages/signup/SignUp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,14 @@ const router = createBrowserRouter([
         element: <Contact />
       }
     ]
+  },
+  {
+    path: "login",
+    element: <Login />
+  },
+  {
+    path: "sign-up",
+    element: <SignUp />
   }
 ]
 );
