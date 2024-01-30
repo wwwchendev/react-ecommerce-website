@@ -10,25 +10,25 @@ const btnText = "提交";
 
 const contactList = [
   {
-    imgUrl: "/src/assets/images/icon/01.png",
+    imgUrl: "/images/icon/01.png",
     imgAlt: "contact icon",
     title: "辦公室地址",
     desc: "1201 公園街，第五大道",
   },
   {
-    imgUrl: "/src/assets/images/icon/02.png",
+    imgUrl: "/images/icon/02.png",
     imgAlt: "contact icon",
     title: "電話號碼",
     desc: "+22698 745 632，02 982 745",
   },
   {
-    imgUrl: "/src/assets/images/icon/03.png",
+    imgUrl: "/images/icon/03.png",
     imgAlt: "contact icon",
     title: "發送電子郵件",
     desc: "admin@shopcart.com",
   },
   {
-    imgUrl: "/src/assets/images/icon/04.png",
+    imgUrl: "/images/icon/04.png",
     imgAlt: "contact icon",
     title: "我們的網站",
     desc: "www.shopcart.com",

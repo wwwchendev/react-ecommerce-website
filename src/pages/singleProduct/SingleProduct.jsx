@@ -17,7 +17,7 @@ const SingleProduct = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch('/src/products.json')
+    fetch('/products.json')
       .then(res => {
         if (!res.ok) {
           throw new Error('Network response was not ok');

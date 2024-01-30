@@ -42,7 +42,7 @@ const NavItems = () => {
                 }}>
                   <div className="nav-profile" style={{
                     backgroundImage: user.photoURL ? `url(${user.photoURL})`
-                      : 'url("/src/assets/images/clients/avater.jpg")'
+                      : 'url("/images/clients/avater.jpg")'
                   }}></div>
                   <span className='ms-2'>
                     {user.displayName ? user.displayName : "user"}
@@ -94,7 +94,7 @@ const NavItems = () => {
                   }}>
                     <div className="nav-profile" style={{
                       backgroundImage: user.photoURL ? `url(${user.photoURL})`
-                        : 'url("/src/assets/images/clients/avater.jpg")'
+                        : 'url("/images/clients/avater.jpg")'
                     }}>
                     </div>
                     <div className='ms-2'>
@@ -103,7 +103,7 @@ const NavItems = () => {
                       </span>
                       <i className="icofont-caret-down"></i>
                     </div>
-                    <div className="card userOperation" id='userOperation'>
+                    <div className="card userOperation d-none" id='userOperation'>
                       <ul className="list-group list-group-flush">
                         <li className="list-group-item border-0" onClick={() => { navigate('/cart-page') }}>購物車</li>
                         <li className="list-group-item border-0">訂單</li>

@@ -7,37 +7,37 @@ const desc = (<p>在任何裝置上使用SHOPCART APP享受購物時光<br />只
 
 const clientsList = [
   {
-    imgUrl: '/src/assets/images/clients/avater.jpg',
+    imgUrl: '/images/clients/avater.jpg',
     imgAlt: 'education thumb rajibraj91 rajibraj',
     text: 'FROM NORTH-AMERICA',
   },
   {
-    imgUrl: '/src/assets/images/clients/avater.jpg',
+    imgUrl: '/images/clients/avater.jpg',
     imgAlt: 'education thumb rajibraj91 rajibraj',
     text: 'FROM Greenland',
   },
   {
-    imgUrl: '/src/assets/images/clients/avater.jpg',
+    imgUrl: '/images/clients/avater.jpg',
     imgAlt: 'education thumb rajibraj91 rajibraj',
     text: 'FROM EUROPE',
   },
   {
-    imgUrl: '/src/assets/images/clients/avater.jpg',
+    imgUrl: '/images/clients/avater.jpg',
     imgAlt: 'education thumb rajibraj91 rajibraj',
     text: 'FROM SOUTH-AMERICA',
   },
   {
-    imgUrl: '/src/assets/images/clients/avater.jpg',
+    imgUrl: '/images/clients/avater.jpg',
     imgAlt: 'education thumb rajibraj91 rajibraj',
     text: 'FROM AFRICA',
   },
   {
-    imgUrl: '/src/assets/images/clients/avater.jpg',
+    imgUrl: '/images/clients/avater.jpg',
     imgAlt: 'education thumb rajibraj91 rajibraj',
     text: 'FROM AUSTRALIA',
   },
   {
-    imgUrl: '/src/assets/images/clients/avater.jpg',
+    imgUrl: '/images/clients/avater.jpg',
     imgAlt: 'education thumb rajibraj91 rajibraj',
     text: 'FROM ASIA',
   },

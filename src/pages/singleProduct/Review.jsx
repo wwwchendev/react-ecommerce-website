@@ -4,28 +4,28 @@ import Ratting from '../../components/Ratting';
 const reviewtitle = "新增評論";
 let ReviewList = [
   {
-    imgUrl: "/src/assets/images/instructor/01.jpg",
+    imgUrl: "/images/instructor/01.jpg",
     imgAlt: "Client thumb",
     name: "Ganelon Boileau",
     date: "Posted on Jun 10, 2022 at 6:57 am",
     desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
   },
   {
-    imgUrl: "/src/assets/images/instructor/02.jpg",
+    imgUrl: "/images/instructor/02.jpg",
     imgAlt: "Client thumb",
     name: "Morgana Cailot",
     date: "Posted on Jun 10, 2022 at 6:57 am",
     desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
   },
   {
-    imgUrl: "/src/assets/images/instructor/03.jpg",
+    imgUrl: "/images/instructor/03.jpg",
     imgAlt: "Client thumb",
     name: "Telford Bois",
     date: "Posted on Jun 10, 2022 at 6:57 am",
     desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.",
   },
   {
-    imgUrl: "/src/assets/images/instructor/04.jpg",
+    imgUrl: "/images/instructor/04.jpg",
     imgAlt: "Client thumb",
     name: "Cher Daviau",
     date: "Posted on Jun 10, 2022 at 6:57 am",
@@ -105,7 +105,7 @@ export const Review = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit doloremque enim optio, similique nesciunt, dolor dicta nihil praesentium quidem ut beatae aperiam illum repellendus necessitatibus inventore natus error? Aut incidunt, non excepturi odit molestiae asperiores odio praesentium autem, iusto impedit eveniet earum voluptate quisquam ut animi dolores iure commodi vitae ex exercitationem, eligendi veritatis. Soluta repellendus perspiciatis illo similique rerum praesentium quae. Numquam et neque exercitationem, excepturi laborum possimus, deserunt delectus voluptates ipsam, quisquam quos.</p>
           <div className="post-item">
             <div className="post-thumb">
-              <img src="/src/assets/images/shop/01.jpg" alt="" />
+              <img src="/images/shop/01.jpg" alt="" />
             </div>
             <div className='post-content'>
               <ul className='lab-ul'>

@@ -6,7 +6,7 @@ import blogList from '../../utilis/blogdata'
 const Blog = () => {
   return (
     <div>
-      <PageHeader title='Our Blog Page' currentPage='Blog' />
+      <PageHeader title='文章' currentPage='Blog' />
       <div className="blog-section padding-tb section-bg">
         <div className="container">
           <div className="section-wrapper">

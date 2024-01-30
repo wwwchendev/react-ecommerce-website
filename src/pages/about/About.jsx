@@ -12,19 +12,19 @@ const expareance = "年業界經驗";
 
 const aboutList = [
   {
-    imgUrl: '/src/assets/images/about/icon/01.jpg',
+    imgUrl: '/images/about/icon/01.jpg',
     imgAlt: '關於圖示 rajibraj91 rajibraj',
     title: '熟練的講師',
     desc: '獨特地提供多功能用戶訪問，同時傳達槓桿服務',
   },
   {
-    imgUrl: '/src/assets/images/about/icon/02.jpg',
+    imgUrl: '/images/about/icon/02.jpg',
     imgAlt: '關於圖示 rajibraj91 rajibraj',
     title: '獲得證書',
     desc: '獨特地提供多功能用戶訪問，同時傳達槓桿服務',
   },
   {
-    imgUrl: '/src/assets/images/about/icon/03.jpg',
+    imgUrl: '/images/about/icon/03.jpg',
     imgAlt: '關於圖示 rajibraj91 rajibraj',
     title: '線上課程',
     desc: '獨特地提供多功能用戶訪問，同時傳達槓桿服務',
@@ -41,10 +41,10 @@ const About = () => {
             <div className="col">
               <div className="about-left">
                 <div className="about-thumb">
-                  <img src="/src/assets/images/about/01.jpg" alt="" />
+                  <img src="/images/about/01.jpg" alt="" />
                 </div>
                 <div className="abs-thumb">
-                  <img src="/src/assets/images/about/02.jpg" alt="" />
+                  <img src="/images/about/02.jpg" alt="" />
                 </div>
                 <div className="about-left-content">
                   <h3>{year}</h3>
