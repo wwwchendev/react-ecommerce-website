@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/logo.png'
+import { AuthContext } from '../context/AuthProvider'
+
 const NavItems = () => {
   const [headerFixed, setHeaderFixed] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
   const [socialToggle, setSocialToggle] = useState(false);
+  const navigate = useNavigate();
 
+  // auth info
+  const { user, logOut } = useContext(AuthContext)
+  // console.log(user);
   // 監聽視窗滾動位置 固定Header
   window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
@@ -21,8 +28,31 @@ const NavItems = () => {
       <div className={`header-top d-md-none ${socialToggle ? 'open' : ''} `}>
         <div className="container">
           <div className="header-top-area">
-            <Link to='/sign-up' className='lab-btn me-3'><span>註冊</span></Link>
-            <Link to='/login'><span>登入</span></Link>
+            {user === null
+              ? (<>
+                <Link to='/sign-up' className='lab-btn me-3'><span>註冊</span></Link>
+                <Link to='/login'><span>登入</span></Link>
+              </>)
+              : (<>
+                <div className="navUserInfo" onClick={() => {
+                  const userOperation = document.getElementById('userOperation');
+                  if (userOperation) {
+                    userOperation.classList.toggle('d-none');
+                  }
+                }}>
+                  <div className="nav-profile" style={{
+                    backgroundImage: user.photoURL ? `url(${user.photoURL})`
+                      : 'url("/src/assets/images/clients/avater.jpg")'
+                  }}></div>
+                  <span className='ms-2'>
+                    {user.displayName ? user.displayName : "user"}
+                  </span>
+                </div>
+                <div className="card-footer text-muted" onClick={() => { logOut() }}>
+                  登出
+                </div>
+              </>)
+            }
           </div>
         </div>
       </div>
@@ -50,8 +80,43 @@ const NavItems = () => {
                 </ul>
               </div>
               {/* sign-up & login */}
-              <Link to='/sign-up' className='lab-btn me-3 d-none d-md-block'><span>註冊</span></Link>
-              <Link to='/login' className='d-none d-md-block'><span>登入</span></Link>
+              {user === null
+                ? (<>
+                  <Link to='/sign-up' className='lab-btn me-3 d-none d-md-block'><span>註冊</span></Link>
+                  <Link to='/login' className='d-none d-md-block'><span>登入</span></Link>
+                </>)
+                : (<>
+                  <div className="navUserInfo" onClick={() => {
+                    const userOperation = document.getElementById('userOperation');
+                    if (userOperation) {
+                      userOperation.classList.toggle('d-none');
+                    }
+                  }}>
+                    <div className="nav-profile" style={{
+                      backgroundImage: user.photoURL ? `url(${user.photoURL})`
+                        : 'url("/src/assets/images/clients/avater.jpg")'
+                    }}>
+                    </div>
+                    <div className='ms-2'>
+                      <span>
+                        {user.displayName ? user.displayName : "user"}
+                      </span>
+                      <i className="icofont-caret-down"></i>
+                    </div>
+                    <div className="card userOperation" id='userOperation'>
+                      <ul className="list-group list-group-flush">
+                        <li className="list-group-item border-0" onClick={() => { navigate('/cart-page') }}>購物車</li>
+                        <li className="list-group-item border-0">訂單</li>
+                      </ul>
+
+                      <div className="card-footer text-muted" onClick={() => { logOut() }}>
+                        登出
+                      </div>
+                    </div>
+                  </div>
+                </>
+                )
+              }
 
               {/* menu toggler */}
               <div className={`header-bar d-lg-none ${menuToggle ? 'active' : ''}`} onClick={() => { setMenuToggle(!menuToggle) }}>
