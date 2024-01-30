@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import 'swiper/css';
+import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
 
 // bootstrap css
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,6 +29,7 @@ import About from './pages/about/About.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import AuthProvider from './context/AuthProvider.jsx';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -47,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/cart-page",
-        element: <CartPage />
+        element: <PrivateRoute><CartPage /></PrivateRoute>
       },
       {
         path: "/blog",
